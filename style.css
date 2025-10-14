@@ -1,19 +1,21 @@
 img {
     width: 100%;
-    border-radius: 15px;
+    border-radius: 55px;
 }
 
 /*Hur stor loggan ska vara*/
 .logo {
-    width: 80px;
-    height: auto;
+    width: 100px;
+    height: 90.47px;
+    top: 21.38px;
+    left: 25px;
 }
 
 /*Hur footern ska se ut*/
 .five {
-    width: 100%;
-    max-width: 1600px;
-    color: white;
+    width: 1920px;
+    height: 210px;
+    color:rgba(255,255,255,1);
     background-color: rgba(47,128,237,1);
     text-align: left;
     font-family: Inter;
@@ -21,6 +23,18 @@ img {
     padding-left: 10px;;
 }
 
+#p1 {
+    width:709px;
+    height:174px;
+    top:414px;
+    left:127px;
+    opacity: 60%;
+    font-family: SF Pro Text;
+    font-weight: 400;
+    font-size: 24px;
+    line-height:100%;
+    letter-spacing: 1%;
+}
 /*Hur div two ska se ut.*/
 .two {
     background-color: rgba(224,236,253,1);
@@ -52,14 +66,19 @@ img {
     font-size: 30px;
     line-height: 100%;
     letter-spacing: -6%;
-    
-
 }
-
-.studera-mera {
-    font-family: 'Times New Roman', Times, serif;
+#studera {
+    width: 416px;
+    height: 91px;
+    top: 291px;
+    left: 125px;
+    font-family: SF Pro Display;
+    font-weight: 700;
+    font-size: 76px;
+    line-height: 100%;
+    letter-spacing: -6%;
 }
-
+ 
 #p1 {
     padding-left: 20px;
     line-height: 1.3;
@@ -88,8 +107,8 @@ ul {
 
 .two {
     grid-area: two;
-    width: 1235;
-    height:625;
+    width: 1235px;
+    height:625px;
     top:1234px;
     opacity: 1;
     border-top-right-radius: 55px;
@@ -112,8 +131,8 @@ ul {
 }
 
 .four {
-    width: 978;
-    height: 786;
+    width: 978px;
+    height: 786px;
     left: 942px;
     opacity:1;
     border-bottom-left-radius: 262px;
@@ -202,6 +221,7 @@ ul {
     .grid-container .three img {
         width: 100%;
         height: auto;
+        border-radius: 0;
     }
 
     /*Gör så att div four inte syns i mobil storleken.*/
