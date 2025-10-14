@@ -11,18 +11,6 @@ img {
     left: 25px;
 }
 
-/*Hur footern ska se ut*/
-.five {
-    width: 1920px;
-    height: 210px;
-    color:rgba(255,255,255,1);
-    background-color: rgba(47,128,237,1);
-    text-align: left;
-    font-family: Inter;
-    font-size: 24px;/*Hur stor texten ska vara i footern*/
-    padding-left: 10px;;
-}
-
 #p1 {
     width:709px;
     height:174px;
@@ -46,11 +34,7 @@ img {
 }
 
 /*Ändrar färg på överskriften på div two*/
-#one {
-    color: rgba(236,94,193,1);
-    font-family: Opens sans;
-    font-size: 48px;
-}
+
 
 #studera {
     width: 416px;
@@ -98,6 +82,12 @@ ul {
     opacity: 1;
     border-top-right-radius: 55px;
     border-bottom-right-radius: 55px;
+    
+}
+#one {
+    color: rgba(47,128,237,1);
+    font-family: 'open sans', sans-serif;
+    font-size: 48px;
 }
 
 .three {
@@ -123,24 +113,37 @@ ul {
      grid-area: four;
     background-color: rgba(47,128,237,1);
 }
-.four ul {
-    width: 302px;
-    height: 41px;
-    top: 344px;
+.Kurser2 {
+    width: 3293px;
+    height: 44px;
+    top: 148px;
     left: 1148px;
+    font-family:'open sans', sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -6%;
+    color: rgba(255,255, 255, 1);
 }
 .four ul li {
-    
-    font-family: Open Sans,sans-serif;
+    font-family: 'open sans',sans-serif;
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
     letter-spacing: -6%;
+    color: rgba(255, 255, 255, 1);
 }
 
 .five {
-    grid-area: five;
-    align-content: center;
+    width: 1920px;
+    height: 210px;
+    top:2001px;
+    color:rgba(255,255,255,1);
+    background-color: rgba(47,128,237,1);
+    text-align: left;
+    font-family: Inter;
+    font-size: 24px;/*Hur stor texten ska vara i footern*/
+    padding-left: 10px;;
 }
 
 /*Tablet settings*/
