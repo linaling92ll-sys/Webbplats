@@ -19,7 +19,7 @@ img {
     width:709px;
     height:174px;
     top:414px;
-    left:127px;
+    padding-left:127px;
     opacity: 60%;
     font-family: SF Pro Text;
     font-weight: 400;
@@ -29,32 +29,26 @@ img {
 }
 /*Hur div two ska se ut.*/
 .two {
-    background-color: rgba(224,236,253,1);
-    color: black;
-    padding: 2%;
-    font-family:Open sans;
-    font-size:24px;
-    margin-bottom: 20px;
+    font-family: 'open sans',sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: rgba(0,0,0,1);
 }
 
-/*Ändrar färg på överskriften på div two*/
-
-
 #studera {
+    
     width: 416px;
     height: 91px;
     top: 291px;
-    left: 125px;
-    font-family: SF Pro Display;
+    padding-left: 125px;
+    font-family: 'SF Pro Display';
     font-weight: 700;
     font-size: 76px;
     line-height: 100%;
     letter-spacing: -6%;
-}
- 
-#p1 {
-    padding-left: 20px;
-    line-height: 1.3;
+    white-space: nowrap;
 }
 
 ul {
@@ -86,8 +80,10 @@ ul {
     opacity: 1;
     border-top-right-radius: 55px;
     border-bottom-right-radius: 55px;
+    background-color: rgba(224,236,253,1);
     
 }
+
 #one {
     color: rgba(47,128,237,1);
     font-family: 'open sans', sans-serif;
@@ -141,6 +137,7 @@ ul {
 .five {
     width: 1920px;
     height: 210px;
+    position: absolute;
     top:2001px;
     color:rgba(255,255,255,1);
     background-color: rgba(47,128,237,1);
