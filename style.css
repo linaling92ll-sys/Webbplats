@@ -15,9 +15,9 @@ img {
     max-width: 1600px;
     color: white;
     background-color: rgb(25, 148, 248);
-    text-align: center;
-    font-size: 1.5em;
-    /*Hur stor texten ska vara i footern*/
+    text-align: left;
+    font-size: 1em;/*Hur stor texten ska vara i footern*/
+    padding-left: 10px;;
 }
 
 /*Hur div two ska se ut.*/
