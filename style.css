@@ -27,7 +27,8 @@ img {
     border-radius: 15px;
     /*Gör så att det blir rundade kanter*/
     padding: 2%;
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
 }
 
 /*Ändrar färg på överskriften på div two*/
@@ -92,6 +93,7 @@ ul {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 16px;
+    margin-bottom: 20px;
 }
 
 .three img {
