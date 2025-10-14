@@ -1,6 +1,10 @@
 img {
-    width: 100%;
+    width: 265px;
+    height: 265px;
+    top: 876px;
+    left: 130px;
     border-radius: 55px;
+    opacity: 80%;
 }
 
 /*Hur stor loggan ska vara*/
