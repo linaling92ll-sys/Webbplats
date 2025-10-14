@@ -104,7 +104,7 @@ ul {
             "three three"
             "two two"
             "five five";
-        gap: 16px; /* optional */
+        gap: 16px; 
     }
 
     .one { 
@@ -147,32 +147,45 @@ ul {
 
 
 /*Mobile settings*/
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .grid-container {
-        .one {
-            width: 100%;
-        }
-
-        grid-template-areas: "one"
-        "two"
-        "three"
-        "four";
+        display: grid;
+        grid-template-areas: 
+            "one"
+            "two"
+            "three"
+            "four"
+            "five"; 
+        gap: 16px; 
     }
 
-    .three {
+    .grid-container .one {
+        grid-area: one;
+        width: 100%;
+    }
+
+    .grid-container .two {
+        grid-area: two;
+    }
+
+    .grid-container .three {
+        grid-area: three;
         display: block;
-
-        img {
-            width: 100%;
-        }
     }
 
-    .four {
+    .grid-container .three img {
+        width: 100%;
+        height: auto;
+    }
+
+    .grid-container .four {
+        grid-area: four;
         display: none;
     }
 
-    .five {
-        grid-column: 1/-1;
+    .grid-container .five {
+        grid-area: five;
+        grid-column: 1 / -1;
         width: 100%;
     }
 }
