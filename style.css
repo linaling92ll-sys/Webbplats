@@ -84,11 +84,11 @@ ul {
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 16px;
-
-    img {
+}
+   .three img {
         width: 25%;
     }
-}
+
 
 .five {
     grid-area: five;
