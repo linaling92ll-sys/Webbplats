@@ -15,29 +15,30 @@ img {
 }
 
 #p1 {
-    width:709px;
-    height:174px;
-    top:414px;
-    padding-left:127px;
+    width: 709px;
+    height: 174px;
+    top: 414px;
+    padding-left: 127px;
     opacity: 60%;
     font-family: SF Pro Text;
     font-weight: 400;
     font-size: 24px;
-    line-height:100%;
+    line-height: 100%;
     letter-spacing: 1%;
 }
+
 /*Hur div two ska se ut.*/
 .two {
-    font-family: 'open sans',sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: rgba(0,0,0,1);
+    color: rgba(0, 0, 0, 1);
 }
 
 #studera {
-    
+
     width: 416px;
     height: 91px;
     top: 291px;
@@ -74,17 +75,17 @@ ul {
 .two {
     grid-area: two;
     width: 1235px;
-    height:625px;
-    top:1234px;
+    height: 625px;
+    top: 1234px;
     opacity: 1;
     border-top-right-radius: 55px;
     border-bottom-right-radius: 55px;
-    background-color: rgba(224,236,253,1);
-    
+    background-color: rgba(224, 236, 253, 1);
+
 }
 
 #one {
-    color: rgba(47,128,237,1);
+    color: rgba(47, 128, 237, 1);
     font-family: 'open sans', sans-serif;
     font-size: 48px;
 }
@@ -108,30 +109,32 @@ ul {
 .four {
     width: 100%;
     height: 786px;
-   
+
     border-bottom-left-radius: 262px;
-     grid-area: four;
-    background-color: rgba(47,128,237,1);
+    grid-area: four;
+    background-color: rgba(47, 128, 237, 1);
     padding-left: 10%;
 }
+
 .Kurser2 {
     width: 100%;
     height: 44px;
     top: 148px;
-    font-family:'open sans', sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 600;
     font-size: 32px;
     line-height: 1.2;
     letter-spacing: -6%;
-    color: rgba(255,255, 255, 1);
+    color: rgba(255, 255, 255, 1);
     margin-bottom: 20px;
     padding: 150px 200px 120 px 200px;
 }
+
 .four ul li {
-    font-family: 'open sans',sans-serif;
+    font-family: 'open sans', sans-serif;
     font-weight: 600;
     font-size: 30px;
-    line-height:1.5;
+    line-height: 1.5;
     letter-spacing: -6%;
     color: rgba(255, 255, 255, 1);
     padding: 0%;
@@ -141,12 +144,14 @@ ul {
     grid-area: five;
     width: 100%;
     height: 210px;
-    color:rgba(255,255,255,1);
-    background-color: rgba(47,128,237,1);
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 128, 237, 1);
     text-align: left;
     font-family: Inter;
-    font-size: 24px;/*Hur stor texten ska vara i footern*/
-    padding-left: 10px;;
+    font-size: 24px;
+    /*Hur stor texten ska vara i footern*/
+    padding-left: 10px;
+    ;
     box-sizing: border-box;
     position: relative;
 }
@@ -160,6 +165,7 @@ ul {
             "three three"
             "two two"
             "five five";
+        grid-template-columns: 1fr 1fr;
         gap: 16px;
     }
 
@@ -171,7 +177,7 @@ ul {
         grid-area: two;
         width: 100%;
         height: 100%;
-        border-top-right-radius:55px;
+        border-top-right-radius: 55px;
         border-bottom-right-radius: 55px;
     }
 
@@ -180,33 +186,33 @@ ul {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 16px;
-        justify-items: center;
-        align-items: center;
+        
     }
 
     .three img {
-        width: 90%;
+        width: 100%;
         height: auto;
         max-width: 400px;
         border-radius: 15px;
         object-fit: contain;
     }
 
-    .grid-container.four {
+    .four {
         grid-area: four;
-        font-family: 'open sans',sans-serif;
-    font-weight: 600;
-    font-size: 30px;
-    line-height:1.5;
-    letter-spacing: -6%;
-    color: rgba(255, 255, 255, 1);
-    padding: 0%;
-        
-    }
-    #one {
-        font-family: 'open sans',sans-serif;
+        max-width: 100%;
+        font-family: 'open sans', sans-serif;
         font-weight: 600;
-        font-style: 'semibold';
+        font-size: 30px;
+        line-height: 1.5;
+        letter-spacing: -6%;
+        color: rgba(255, 255, 255, 1);
+        padding: 0%;
+
+    }
+
+    #one {
+        font-family: 'open sans', sans-serif;
+        font-weight: 600;
         font-size: 64px;
         line-height: 100%;
         letter-spacing: -4%;
@@ -241,7 +247,7 @@ ul {
 
     .grid-container .two {
         grid-area: two;
-        width:100%;
+        width: 100%;
         height: 821px;
         border-top-right-radius: 55px;
         border-bottom-right-radius: 55px;
