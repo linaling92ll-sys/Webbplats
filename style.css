@@ -6,6 +6,11 @@ img {
     opacity: 80%;
 }
 
+html, body {
+    margin:0;
+    padding:0;
+    width:100%
+}
 /*Hur stor loggan ska vara*/
 .logo {
     width: 100px;
@@ -67,6 +72,7 @@ ul {
             "three three three three"
             "two two two two"
             "five five five five";
+            width: 100%;
     }
 
     .one {
@@ -166,7 +172,7 @@ ul {
 
     .five {
         grid-area: five;
-        width: 100%;
+        width: 100vw;
         height: 210px;
         color: rgba(255, 255, 255, 1);
         background-color: rgba(47, 128, 237, 1);
@@ -177,6 +183,8 @@ ul {
         padding-left: 10px;
         box-sizing: border-box;
         position: relative;
+        display:flex;
+        align-items: center;
     }
 }
 
