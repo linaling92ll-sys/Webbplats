@@ -331,7 +331,7 @@ body {
 
 .one {
     width: 45%;
-    font-family: sans-serif ;
+    font-family: sans-serif;
 }
 
 .logo {
@@ -344,7 +344,8 @@ body {
 }
 
 h1 {
-    font-size: 76px;
+    font-size: clamp(40px, 5vw, 76px);
+    white-space: nowrap;
 }
 
 #p1 {
@@ -440,38 +441,46 @@ li {
     font-weight: 400;
 }
 
+@media screen and (min-width:1024px) and (max-width:1600px) {
+    h1 {
+        font-size: 56px;
+    }
+}
+
 @media screen and (max-width: 1024px) and (min-width: 601px) {
     h1 {
         white-space: nowrap;
-        font-size: 50px;
+        font-size: clamp(30px, 5vw, 76px);
     }
 
     .Studera-mera {
         margin-left: 50px;
         text-align: left;
     }
-.two {
-    margin-top: 0;
-}
+
+    .two {
+        margin-top: 0;
+    }
+
     .two-content {
         padding-left: 80px;
         text-align: left;
     }
 
     .Kurser2 {
-        font-size: 48px;
+        font-size: clamp(30px, 5vw, 76px);
         letter-spacing: -0.04em;
         white-space: nowrap;
         text-align: left;
         margin-left: 0;
     }
-    
+
     .three {
         flex-wrap: wrap;
         margin-bottom: 20px;
-        
+
     }
-    
+
     .bilder {
         aspect-ratio: 2/1;
         width: 40%;
@@ -492,7 +501,7 @@ li {
         padding-left: 50px;
         text-align: left;
     }
-    
+
 
     #one {
         color: #EC5EC1;
@@ -524,6 +533,7 @@ li {
         width: 100%;
         border-radius: 0;
         margin-bottom: 20px;
+        opacity: 100%;
     }
 
     .flexcontainer2 {
