@@ -541,9 +541,13 @@ li {
         display: flex;
         flex-direction: column-reverse;
     }
+    .flexcontainer2 >* {
+        margin: 20px 0px;
+    }
 
     .footer {
-    font-family: sans-serif;
-}
+        font-family: sans-serif;
+    }
 
 }
+
