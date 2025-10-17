@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -16,6 +15,8 @@ body {
 .flexcontainer1 {
     display: flex;
     flex-direction: row;
+    /*Med mowrap så menar vi att dem får inte
+    wrapa runt varandra*/
     flex-wrap: nowrap;
 
 }
@@ -24,77 +25,87 @@ body {
     width: 45%;
     font-family: sans-serif;
 }
+
 /*Hur stor loggan ska vara*/
 .logo {
-    width: 100px;
+    width: 20%;
     height: auto;
 }
 
 .Studera-mera {
     /*Hur stor det ska vara runt class=Studera-mera*/
-    margin: 200px 100px auto 130px;
+    margin: 20% 20% auto;
 }
 
-h1 {
-    /*När vi använder clamp så sätter vi minsta värdet som är tillåtet,det föredragna värdet och 
-    det största värdet som är tillåtet*/
-    font-size: clamp(40px, 5vw, 76px);
-    white-space: nowrap;
+/*Här sätter jag inte hur stor rubriken på studera mera ska vara.*/
+#studera {
+    font-family: sans-serif;
+    font-size: 2.5rem;
 }
-
+/*Hur stor texten ska vara i paragrafen med 
+id=p1 och att den ska vara lite genomskinlig.*/
 #p1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     opacity: 0.6;
 }
-
+/*Vilken bakgrundsfärg och vilken färg texten ska ha.
+Här skriver vi också vilken border radius elementet ska ha.*/
 .two {
     width: 55%;
     background-color: #2F80ED;
     color: white;
-    border-radius: 0 0 0 262px;
+    border-radius: 0 0 0 4rem;
 }
 
+/*Här sätter jag ut vilket typsnitt det ska vara och
+hur mycket padding det ska vara runt texten.*/
 .two-content {
     font-family: sans-serif;
-    padding: 150px 200px 120px;
+    padding: 10% 20%;
 }
-
+/*Hur stor texten ska vara i huvudskriften på class=Kurser 2.
+jag sätter också hur stort mellanrum det ska vara mellan bokstäverna.*/
 .Kurser2 {
-    font-size: 48px;
+    font-size: 2rem;
     letter-spacing: -0.04em;
 }
-
+/*Hur stor texten ska vara i ul listorna och
+att det inte ska vara prickar framför,
+eftersom det är en lista.*/
 ul {
-    font-size: 30px;
+    font-size: 1.5rem;
     list-style-type: none;
     padding: 0;
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 5%;
 }
-
+/*Här sätter jag CSS på class=three(där bilderna ligger i). Det ska visas som en flex-box,
+det ska visas i en rad, dem får inte wrapa runt varandra,
+det ska vara urymme runt bilderna, margin 10% på sidorna om
+bilderna och dem ska täcka 100%*/
 .three {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 190px 0;
+    margin: 10% 0;
     width: 100%;
 }
-
+/*Här lägger jag CSS på själva bilderna.Dem ska ha en bredd på 20%
+dem ska täcka elementet, dem ska vara 80% synliga och dem har en 
+border-radius på 4rem. */
 .bilder {
     aspect-ratio: 1/1;
     width: 20%;
     object-fit: cover;
-    /*Hur mycket bilden ska synas.*/
     opacity: 80%;
-    border-radius: 55px;
+    border-radius: 4rem;
 }
-
 .four {
     width: 100%;
-    margin-bottom: 142px;
+    margin-bottom: 10%;
 }
 
 .Kurser {
@@ -103,107 +114,104 @@ li {
     word-wrap: break-word;
     font-family: sans-serif;
     width: 100%;
-    max-width: 900px;
+    max-width: 65%;
     background-color: #E0ECFD;
-    border-radius: 0 55px 55px 0;
-    padding: 30px 30px 50px;
-    word-wrap: break-word;
-    white-space: normal;
-    overflow-wrap: break-word;
-    box-sizing: border-box;
+    border-radius: 0 4rem 4rem 0;
+    padding: 5%;
 }
 
 #one {
     color: #2F80ED;
+    font-family: sans-serif;
+    font-size: 3rem;
 }
 
 .five {
     width: 100%;
     background-color: #2F80ED;
     color: white;
-    padding: 45px 84px;
-}
-
-.footer-text:not(:last-of-type) {
-    margin-bottom: 13px;
+    padding: 2%;
 }
 
 .footer-text {
     font-family: sans-serif;
-    font-size: 24px;
+    font-size: 1.3rem;
     font-weight: 400;
 }
-/*För desktop*/
-@media screen and (min-width:1024px) and (max-width:1599px) {
-    h1 {
-        font-size: 56px;
-    }
-}
-/*För tablet*/
+    /*För tablet.
+    Här har jag satt CSS för hur elementen ska ändras när
+    skärmen ändras till max:1024px och min:601px*/
 @media screen and (max-width: 1024px) and (min-width: 601px) {
-    h1 {
+    #studera {
         white-space: nowrap;
-        font-size: clamp(30px, 5vw, 76px);
+        font-size: 2rem;
     }
-
+    /*Hur mycket margin det ska vara till vänster och
+    var texten ska sitta.*/
     .Studera-mera {
-        margin-left: 50px;
+        margin-left: 15%;
         text-align: left;
     }
-
-    .two {
-        margin-top: 0;
-    }
-
+    /*Var texten ska sitta*/
     .two-content {
-        padding-left: 40px;
         text-align: left;
     }
-
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
     .Kurser2 {
-        font-size: clamp(30px, 5vw, 76px);
+        font-size: 2rem;
         letter-spacing: -0.04em;
         white-space: nowrap;
         text-align: left;
-        margin-left: 0;
+    }
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
+    ul {
+        font-size: 1.5rem;
+
     }
 
     .three {
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 5%;
 
     }
 
     .bilder {
         aspect-ratio: 2/1;
         width: 40%;
-        margin-bottom: 40px;
+        margin-bottom: 5%;
     }
 
     .four {
         width: 100%;
-        margin-bottom: 142px;
+        margin-bottom: 10%;
     }
-
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
     .Kurser {
         font-family: sans-serif;
+        font-size: 1rem;
         width: 68%;
         background-color: #E0ECFD;
-        border-radius: 0 55px 55px 0;
-        padding: 30px 130px 50px;
-        padding-left: 50px;
+        border-radius: 0 4rem 4rem 0;
+        padding: 5%;
         text-align: left;
     }
-
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
     #one {
         color: #EC5EC1;
+        font-size: 2rem;
     }
 }
-/*För mobil*/
+
+    /*För mobil
+    Här har jag satt CSS på skärmar som är max:600px.*/
 @media screen and (max-width: 600px) {
     .flexcontainer1 {
         display: block;
-        padding-bottom: 20px;
+        padding-bottom: 2%;
     }
 
     .one {
@@ -218,28 +226,45 @@ li {
         display: block;
     }
 
-    .Kurser {
-        width: 100%;
+    .four {
+        max-width: 100%;
     }
-
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
+    .Kurser {
+        font-family: sans-serif;
+        font-size: 1rem;
+        width: 68%;
+        background-color: #E0ECFD;
+        border-radius: 0 4rem 4rem 0;
+        padding: 5%;
+        text-align: left;
+        /*Ändrar storleken på texten så att den inte blir för stor 
+        på mindre skärmar.*/
+        ul {
+            font-size: 1.2rem;
+        }
+    }
+    /*Ändrar storleken på texten så att den inte blir för stor 
+    på mindre skärmar.*/
+    #one {
+        font-size: 1.5rem;
+    }
+    /*Ändrar storleken på bilderna så att den ska täcka hela 
+    bredden på mindre skärmar.*/
     .bilder {
         width: 100%;
         border-radius: 0;
-        margin-bottom: 20px;
+        margin-bottom: 3%;
         opacity: 1;
     }
-
+    /*Med flex-direction så byter jag plats på bilderna och
+    "kurser vi tillhandahåller*/
     .flexcontainer2 {
         display: flex;
         flex-direction: column-reverse;
     }
-    .flexcontainer2 >* {
-        margin: 20px 0px;
+    .footer-text {
+        font-size: 1rem;
     }
-
-    .footer {
-        font-family: sans-serif;
-    }
-
 }
-
