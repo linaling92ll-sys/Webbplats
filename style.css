@@ -1,4 +1,4 @@
-img {
+/*img {
     width: 265px;
     height: 265px;
     top: 876px;
@@ -11,7 +11,7 @@ html, body {
     padding:0;
     width:100%
 }
-/*Hur stor loggan ska vara*/
+
 .logo {
     width: 100px;
     height: 90.47px;
@@ -32,7 +32,7 @@ html, body {
     letter-spacing: 1%;
 }
 
-/*Hur div two ska se ut.*/
+
 .two {
     font-family: 'open sans', sans-serif;
     font-weight: 400;
@@ -60,7 +60,7 @@ ul {
     list-style: none;
 }
 
-/*Desktop settings*/
+
 @media screen and (min-width: 1024px) {
     .grid-container {
         max-width: 1600px;
@@ -179,7 +179,7 @@ ul {
         text-align: left;
         font-family: Inter;
         font-size: 24px;
-        /*Hur stor texten ska vara i footern*/
+       
         padding-left: 10px;
         box-sizing: border-box;
         position: relative;
@@ -188,7 +188,7 @@ ul {
     }
 }
 
-/*Tablet settings*/
+
 @media screen and (min-width: 601px) and (max-width: 1024px) {
     .grid-container {
         display: grid;
@@ -258,7 +258,7 @@ ul {
     }
 }
 
-/*Mobile settings*/
+
 @media screen and (max-width: 600px) {
     .grid-container {
         display: grid;
@@ -296,7 +296,7 @@ ul {
         border-radius: 0;
     }
 
-    /*Gör så att div four inte syns i mobil storleken.*/
+    
     .grid-container .four {
         grid-area: four;
         display: none;
@@ -307,4 +307,229 @@ ul {
         width: 100%;
         margin-top: 20px;
     }
+}*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.grid-container {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flexcontainer1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+}
+
+.one {
+    width: 45%;
+    font-family: sans-serif ;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+}
+
+.Studera-mera {
+    margin: 200px 100px auto 130px;
+}
+
+h1 {
+    font-size: 76px;
+}
+
+#p1 {
+    font-size: 24px;
+    opacity: 0.6;
+}
+
+.two {
+    width: 55%;
+    background-color: #2F80ED;
+    color: white;
+    border-radius: 0 0 0 262px;
+}
+
+.two-content {
+    font-family: sans-serif;
+    padding: 150px 200px 120px;
+}
+
+.Kurser2 {
+    font-size: 48px;
+    letter-spacing: -0.04em;
+}
+
+ul {
+    font-size: 30px;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+.three {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    /* padding: 190px 30px; */
+    margin: 190px 0;
+    width: 100%;
+}
+
+.bilder {
+    /* width: 265px; */
+    /* height: 265px; */
+    aspect-ratio: 1/1;
+    width: 20%;
+    object-fit: cover;
+    opacity: 80%;
+    border-radius: 55px;
+}
+
+.four {
+    width: 100%;
+    margin-bottom: 142px;
+}
+
+.Kurser {
+    white-space: normal;
+    word-wrap: break-word;
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 900px;
+    background-color: #E0ECFD;
+    border-radius: 0 55px 55px 0;
+    padding: 30px 30px 50px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+}
+
+#one {
+    color: #2F80ED;
+}
+
+.five {
+    width: 100%;
+    background-color: #2F80ED;
+    color: white;
+    padding: 45px 84px;
+}
+
+.footer-text:not(:last-of-type) {
+    margin-bottom: 13px;
+}
+
+.footer-text {
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+    h1 {
+        white-space: nowrap;
+        font-size: 50px;
+    }
+
+    .Studera-mera {
+        margin-left: 50px;
+        text-align: left;
+    }
+.two {
+    margin-top: 0;
+}
+    .two-content {
+        padding-left: 80px;
+        text-align: left;
+    }
+
+    .Kurser2 {
+        font-size: 48px;
+        letter-spacing: -0.04em;
+        white-space: nowrap;
+        text-align: left;
+        margin-left: 0;
+    }
+    
+    .three {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        
+    }
+    
+    .bilder {
+        aspect-ratio: 2/1;
+        width: 40%;
+        margin-bottom: 40px;
+    }
+
+    .four {
+        width: 100%;
+        margin-bottom: 142px;
+    }
+
+    .Kurser {
+        font-family: sans-serif;
+        width: 68%;
+        background-color: #E0ECFD;
+        border-radius: 0 55px 55px 0;
+        padding: 30px 130px 50px;
+        padding-left: 50px;
+        text-align: left;
+    }
+    
+
+    #one {
+        color: #EC5EC1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flexcontainer1 {
+        display: block;
+    }
+
+    .one {
+        width: 100%;
+    }
+
+    .two {
+        display: none;
+    }
+
+    .three {
+        display: block;
+    }
+
+    .Kurser {
+        width: 100%;
+    }
+
+    .bilder {
+        width: 100%;
+        border-radius: 0;
+        margin-bottom: 20px;
+    }
+
+    .flexcontainer2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .footer {}
 }
