@@ -1,313 +1,4 @@
-/*img {
-    width: 265px;
-    height: 265px;
-    top: 876px;
-    border-radius: 55px;
-    opacity: 80%;
-}
 
-html, body {
-    margin:0;
-    padding:0;
-    width:100%
-}
-
-.logo {
-    width: 100px;
-    height: 90.47px;
-    top: 21.38px;
-    left: 25px;
-}
-
-#p1 {
-    width: 709px;
-    height: 174px;
-    top: 414px;
-    padding-left: 127px;
-    opacity: 60%;
-    font-family: SF Pro Text, sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 1%;
-}
-
-
-.two {
-    font-family: 'open sans', sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: rgba(0, 0, 0, 1);
-}
-
-#studera {
-
-    width: 416px;
-    height: 91px;
-    top: 291px;
-    padding-left: 125px;
-    font-family: 'SF Pro Display', sans-serif;
-    font-weight: 700;
-    font-size: 76px;
-    line-height: 100%;
-    letter-spacing: -6%;
-    white-space: nowrap;
-}
-
-ul {
-    list-style: none;
-}
-
-
-@media screen and (min-width: 1024px) {
-    .grid-container {
-        max-width: 1600px;
-        display: grid;
-        gap: 1%;
-        grid-template-rows: auto;
-        grid-template-areas:
-            "one one four four"
-            "three three three three"
-            "two two two two"
-            "five five five five";
-            width: 100%;
-    }
-
-    .one {
-        grid-area: one;
-    }
-
-    .Studera-mera {
-        padding-top: 10%;
-    }
-
-    #studera {
-        font-family: 'SF Pro Display', sans-serif;
-        font-weight: 700;
-        font-size: 76px;
-        line-height: 100%;
-        letter-spacing: -6%;
-    }
-
-    #p1 {
-        font-family: 'SF Pro Text', sans-serif;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 100%;
-        letter-spacing: 1%;
-    }
-
-    .two {
-        grid-area: two;
-        width: 1235px;
-        height: 90%;
-        top: 1234px;
-        opacity: 1;
-        border-top-right-radius: 55px;
-        border-bottom-right-radius: 55px;
-        background-color: rgba(224, 236, 253, 1);
-        
-
-    }
-    .Kurser {
-        padding: 5%;
-    }
-
-    #one {
-        color: rgba(47, 128, 237, 1);
-        font-family: 'open sans', sans-serif;
-        font-size: 48px;
-    }
-
-    .three {
-        width: 100%;
-        grid-area: three;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: center;
-        gap: 50px;
-        margin-bottom: 5%;
-    }
-
-    .three img {
-        width: 15%;
-    }
-
-    .four {
-        width: 100%;
-        height: 90%;
-        border-bottom-left-radius: 262px;
-        grid-area: four;
-        background-color: rgba(47, 128, 237, 1);
-        padding-left: 10%;
-    }
-
-    .Kurser2 {
-        width: 100%;
-        height: 44px;
-        top: 148px;
-        font-family: 'open sans', sans-serif;
-        font-weight: 600;
-        font-size: 32px;
-        line-height: 1.2;
-        letter-spacing: -6%;
-        color: rgba(255, 255, 255, 1);
-        margin-bottom: 20px;
-        padding: 150px 200px 120 px 200px;
-    }
-
-    .four ul li {
-        font-family: 'open sans', sans-serif;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 1.5;
-        letter-spacing: -6%;
-        color: rgba(255, 255, 255, 1);
-        padding: 0%;
-    }
-
-    .five {
-        grid-area: five;
-        width: 100vw;
-        height: 210px;
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(47, 128, 237, 1);
-        text-align: left;
-        font-family: Inter;
-        font-size: 24px;
-       
-        padding-left: 10px;
-        box-sizing: border-box;
-        position: relative;
-        display:flex;
-        align-items: center;
-    }
-}
-
-
-@media screen and (min-width: 601px) and (max-width: 1024px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            "one four"
-            "three three"
-            "two two"
-            "five five";
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-    }
-
-    .one {
-        grid-area: one;
-    }
-
-    .two {
-        grid-area: two;
-        width: 100%;
-        height: 100%;
-        border-top-right-radius: 55px;
-        border-bottom-right-radius: 55px;
-    }
-
-    .three {
-        grid-area: three;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 16px;
-
-    }
-
-    .three img {
-        width: 100%;
-        height: auto;
-        max-width: 400px;
-        border-radius: 15px;
-        object-fit: contain;
-    }
-
-    .four {
-        grid-area: four;
-        max-width: 100%;
-        font-family: 'open sans', sans-serif;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 1.5;
-        letter-spacing: -6%;
-        color: rgba(255, 255, 255, 1);
-        padding: 0%;
-
-    }
-
-    #one {
-        font-family: 'open sans', sans-serif;
-        font-weight: 600;
-        font-size: 64px;
-        line-height: 100%;
-        letter-spacing: -4%;
-        color: rgba(236, 94, 193, 1);
-    }
-
-    .five {
-        grid-area: five;
-        grid-column: 1 / -1;
-        width: 100%;
-    }
-}
-
-
-@media screen and (max-width: 600px) {
-    .grid-container {
-        display: grid;
-        grid-template-areas:
-            "one"
-            "two"
-            "three"
-            "four"
-            "five";
-        gap: 16px;
-    }
-
-    .grid-container .one {
-        grid-area: one;
-        width: 100%;
-        height: 295px;
-    }
-
-    .grid-container .two {
-        grid-area: two;
-        width: 100%;
-        height: 821px;
-        border-top-right-radius: 55px;
-        border-bottom-right-radius: 55px;
-    }
-
-    .grid-container .three {
-        grid-area: three;
-        display: block;
-    }
-
-    .grid-container .three img {
-        width: 100%;
-        height: auto;
-        border-radius: 0;
-    }
-
-    
-    .grid-container .four {
-        grid-area: four;
-        display: none;
-    }
-
-    .grid-container .five {
-        grid-area: five;
-        width: 100%;
-        margin-top: 20px;
-    }
-}*/
 * {
     box-sizing: border-box;
 }
@@ -333,17 +24,20 @@ body {
     width: 45%;
     font-family: sans-serif;
 }
-
+/*Hur stor loggan ska vara*/
 .logo {
     width: 100px;
     height: auto;
 }
 
 .Studera-mera {
+    /*Hur stor det ska vara runt class=Studera-mera*/
     margin: 200px 100px auto 130px;
 }
 
 h1 {
+    /*När vi använder clamp så sätter vi minsta värdet som är tillåtet,det föredragna värdet och 
+    det största värdet som är tillåtet*/
     font-size: clamp(40px, 5vw, 76px);
     white-space: nowrap;
 }
@@ -385,17 +79,15 @@ li {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    /* padding: 190px 30px; */
     margin: 190px 0;
     width: 100%;
 }
 
 .bilder {
-    /* width: 265px; */
-    /* height: 265px; */
     aspect-ratio: 1/1;
     width: 20%;
     object-fit: cover;
+    /*Hur mycket bilden ska synas.*/
     opacity: 80%;
     border-radius: 55px;
 }
@@ -407,6 +99,7 @@ li {
 
 .Kurser {
     white-space: normal;
+    /*Att meningarna får brytas*/
     word-wrap: break-word;
     font-family: sans-serif;
     width: 100%;
@@ -440,13 +133,13 @@ li {
     font-size: 24px;
     font-weight: 400;
 }
-
+/*För desktop*/
 @media screen and (min-width:1024px) and (max-width:1599px) {
     h1 {
         font-size: 56px;
     }
 }
-
+/*För tablet*/
 @media screen and (max-width: 1024px) and (min-width: 601px) {
     h1 {
         white-space: nowrap;
@@ -502,12 +195,11 @@ li {
         text-align: left;
     }
 
-
     #one {
         color: #EC5EC1;
     }
 }
-
+/*För mobil*/
 @media screen and (max-width: 600px) {
     .flexcontainer1 {
         display: block;
