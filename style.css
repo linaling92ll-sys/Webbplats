@@ -441,7 +441,7 @@ li {
     font-weight: 400;
 }
 
-@media screen and (min-width:1024px) and (max-width:1600px) {
+@media screen and (min-width:1024px) and (max-width:1599px) {
     h1 {
         font-size: 56px;
     }
@@ -511,6 +511,7 @@ li {
 @media screen and (max-width: 600px) {
     .flexcontainer1 {
         display: block;
+        padding-bottom: 20px;
     }
 
     .one {
@@ -533,7 +534,7 @@ li {
         width: 100%;
         border-radius: 0;
         margin-bottom: 20px;
-        opacity: 100%;
+        opacity: 1;
     }
 
     .flexcontainer2 {
@@ -541,5 +542,8 @@ li {
         flex-direction: column-reverse;
     }
 
-    .footer {}
+    .footer {
+    font-family: sans-serif;
+}
+
 }
