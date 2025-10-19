@@ -117,13 +117,13 @@ border-radius på 4rem. */
     max-width: 65%;
     background-color: #E0ECFD;
     border-radius: 0 4rem 4rem 0;
-    padding: 5%;
+    padding: 3%;
 }
 
 #one {
     color: #2F80ED;
     font-family: sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .five {
