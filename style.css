@@ -28,13 +28,13 @@ body {
 
 /*Hur stor loggan ska vara*/
 .logo {
-    width: 20%;
+    width: 15%;
     height: auto;
 }
 
 .Studera-mera {
     /*Hur stor det ska vara runt class=Studera-mera*/
-    margin: 20% 20% auto;
+    margin: 5% 5% auto;
 }
 
 /*Här sätter jag inte hur stor rubriken på studera mera ska vara.*/
@@ -61,7 +61,7 @@ Här skriver vi också vilken border radius elementet ska ha.*/
 hur mycket padding det ska vara runt texten.*/
 .two-content {
     font-family: sans-serif;
-    padding: 10% 20%;
+    padding: 1% 10%;
 }
 /*Hur stor texten ska vara i huvudskriften på class=Kurser 2.
 jag sätter också hur stort mellanrum det ska vara mellan bokstäverna.*/
@@ -79,7 +79,7 @@ ul {
 }
 
 li {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 /*Här sätter jag CSS på class=three(där bilderna ligger i). Det ska visas som en flex-box,
 det ska visas i en rad, dem får inte wrapa runt varandra,
@@ -90,7 +90,7 @@ bilderna och dem ska täcka 100%*/
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    margin: 10% 0;
+    margin: 5% 0;
     width: 100%;
 }
 /*Här lägger jag CSS på själva bilderna.Dem ska ha en bredd på 20%
@@ -98,14 +98,14 @@ dem ska täcka elementet, dem ska vara 80% synliga och dem har en
 border-radius på 4rem. */
 .bilder {
     aspect-ratio: 1/1;
-    width: 20%;
+    width: 17%;
     object-fit: cover;
     opacity: 80%;
     border-radius: 4rem;
 }
 .four {
     width: 100%;
-    margin-bottom: 10%;
+    margin:5% 0%;
 }
 
 .Kurser {
@@ -173,19 +173,19 @@ border-radius på 4rem. */
 
     .three {
         flex-wrap: wrap;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
 
     }
 
     .bilder {
         aspect-ratio: 2/1;
-        width: 40%;
-        margin-bottom: 5%;
+        width: 35%;
+        margin-bottom: 3%;
     }
 
     .four {
         width: 100%;
-        margin-bottom: 10%;
+        margin: 3% 0%;
     }
     /*Ändrar storleken på texten så att den inte blir för stor 
     på mindre skärmar.*/
@@ -204,6 +204,9 @@ border-radius på 4rem. */
         color: #EC5EC1;
         font-size: 2rem;
     }
+    .five{ 
+        margin-top: 4%;
+    }
 }
 
     /*För mobil
@@ -217,6 +220,15 @@ border-radius på 4rem. */
     .one {
         width: 100%;
     }
+    .logo {
+        width: 15%;
+    }
+    #studera {
+        font-size: 2rem;
+    }
+    #p1 {
+        font-size: 1.3rem;
+    }
 
     .two {
         display: none;
@@ -228,6 +240,8 @@ border-radius på 4rem. */
 
     .four {
         max-width: 100%;
+        margin-bottom: 1%;
+        margin-top: 1%;
     }
     /*Ändrar storleken på texten så att den inte blir för stor 
     på mindre skärmar.*/
@@ -255,7 +269,7 @@ border-radius på 4rem. */
     .bilder {
         width: 100%;
         border-radius: 0;
-        margin-bottom: 3%;
+        margin-bottom: 1%;
         opacity: 1;
     }
     /*Med flex-direction så byter jag plats på bilderna och
